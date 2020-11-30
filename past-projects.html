@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--Dayang Nur Batrisyia Najlaa Binnti Abnag Nor Zandaria-->
+<!--2018412558-->
+<!--CS1105A-->
+<!--Individual Assignment-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Past Projects: Batrisyia Najlaa</title>
+		<style>
+			* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+		
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			
+			header { /*style for header display*/
+				height: 100px;
+				background: #0A0F18;
+				width: 100%;
+				z-index: 10;
+				position: fixed;
+				
+			}
+			
+			a:hover { /*style for hover*/
+				background-color: #283C5F;
+				height: 100%;
+				width: 100%;
+				z-index: 10;
+			}
+			
+			nav { /*style for navigation bar*/
+				float: right;
+				line-height: 100px;
+				position: relative;
+			}
+			
+			nav a { /*style for navigation (in)*/
+				text-decoration: none;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				letter-spacing: 2px;
+				font-size: 18px;
+				margin: 0 10px;
+				color: #F67280;
+				position: relative;
+			}
+			
+			.background-area { /*style for background-area (background photo)*/
+				width: 100%;
+				height: 500px;
+				position: fixed;
+				top: 100px;
+				background-image: url('3.jpg');
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+		
+			.background-area h4 { /*style for background-area (content)*/
+				text-align: center;
+				padding-top: 8%;
+				font-size: 40px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				color: red;
+				background-colour: rgb(0,0,0);
+				background-color: rgba(0,0,0, 0.4);
+				border: none;
+				margin: auto;
+				top: 50%;
+				left: 50%;
+				right: 50%;
+				transform: translate(-50%, -50%):
+				z-index: 2;
+				width: 50%;
+				padding: 10px;
+			}
+			
+			.project-area { /*style for pasteducation-area (size of scroll)*/
+				width: 100%;
+				position: relative;
+				top: 450px;
+				background: #99AFEF;
+				height: 1200px;
+			}
+			
+			.wrapper { /*style for wrapper class*/
+				width: 1170px;
+				margin: 0 auto;
+			}
+			
+			.zoom { /*style for zoom class*/
+				padding: 20px;
+				background-color: pink;
+				transition: transform .2s; /* Animation */
+				width: 500px;
+				height: 340px;
+				margin: 0 auto;
+				right: 70%;
+			}
+
+			.zoom:hover { /*style for zoom in when hovered*/
+			  transform: scale(1.2);
+			}
+			
+			@media only screen and (max-width: 620px){ /*web responsive*/
+			/*for mobile phones*/
+				header, a:hover, nav, nav a, .background-area, .background-area h4, .project-area, .wrapper,.zoom, .zoom:hover {
+					width: 100%;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box-area">
+			<header>
+				<div class="wrapper">
+					<nav> <!--navigation-->
+						<a class="active" href="index.html">home</a> 
+						<a class="active" href="about-me.html">about me</a> 
+						<a class="active" href="experiences.html">experiences</a> 
+						<a class="active" href="past-projects.html">past projects</a> 
+						<a class="active" href="contact-me.html">contact me</a>
+					</nav>
+				</div>
+			</header>
+		</div>
+		<div class="background-area">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4>past <font color="#FFFF00"><i>projects</i></font></h4> 
+		</div>
+		<div class="project-area">
+			<div class="wrapper">
+				<br><br><br><br><br>
+				<div class="zoom">
+					<div style="font-family: Comic Sans MS; color:#9400D3;">
+						<p><i><b>-- sample video</b></i></p>
+					</div>
+					<video width="500" height="340" controls> <!--video player-->
+						<source src="video.mp4" type="video/mp4">
+							Your browser does not support the video player.
+					</video>
+				</div>
+				<br><br><br><br><br><br><br><br>
+				<div class="zoom">
+					<div style="font-family: Comic Sans MS; color:red;">
+						<p><i><b>-- sample figma design</b></i></p>
+					</div>
+					<br><br>
+					<img src="figma.png" alt="Figma" width="500" height="340"> <!--picture-->
+				</div>
+				<br><br><br><br><br><br><br><br>
+			</div>
+			<div style="background-color: #0A0F18; text-align: center; padding: 40px; margin-top: 40px; color: #C0C0C0; font-family: Comic Sans MS" >  <!--footer-->
+				<p><font size="2">&copy; 2020, Dayang Nur Batrisyia Najlaa Binti Abang Nor Zandaria.</font></p>
+			</div>
+		</div>
+	</body>
+</html>

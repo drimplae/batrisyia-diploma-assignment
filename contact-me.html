@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--Dayang Nur Batrisyia Najlaa Binnti Abnag Nor Zandaria-->
+<!--2018412558-->
+<!--CS1105A-->
+<!--Individual Assignment-->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Contact Me: Batrisyia Najlaa</title>
+		<style>
+			* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			}
+		
+			
+			header { /*style for header display*/
+				height: 100px;
+				background: #0A0F18;
+				width: 100%;
+				z-index: 10;
+				position: fixed;
+				
+			}
+			
+			a:hover { /*style for hover*/
+				background-color: #283C5F;
+				height: 100%;
+				width: 100%;
+				z-index: 10;
+			}
+			
+			nav { /*style for navigation bar*/
+				float: right;
+				line-height: 100px;
+				position: relative;
+			}
+			
+			nav a { /*style for navigation (in)*/
+				text-decoration: none;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				letter-spacing: 2px;
+				font-size: 18px;
+				margin: 0 10px;
+				color: #F67280;
+				position: relative;
+			}
+			
+			.background-area { /*style for background-area (background photo)*/
+				width: 100%;
+				height: 500px;
+				position: fixed;
+				top: 100px;
+				background-image: url('4.jpg');
+				-webkit-background-size: cover;
+				background-size: cover;
+				background-position: center center;
+			}
+		
+			.background-area h4 { /*style for background-area (content)*/
+				text-align: center;
+				padding-top: 8%;
+				font-size: 40px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				color: #FFFFFF;
+				background-colour: rgb(0,0,0);
+				background-color: rgba(0,0,0, 0.4);
+				border: none;
+				margin: auto;
+				top: 50%;
+				left: 50%;
+				right: 50%;
+				transform: translate(-50%, -50%):
+				z-index: 2;
+				width: 50%;
+				padding: 10px;
+			}
+			
+			.project-area { /*style for pasteducation-area (size of scroll)*/
+				width: 100%;
+				position: relative;
+				top: 450px;
+				background: #99AFEF;
+				height: 1200px;
+			}
+			
+			.wrapper { /*style for wrapper class*/
+				width: 1170px;
+				margin: 0 auto;
+			}
+			
+			.contact-area { /*style for pasteducation-area (size of scroll)*/
+				width: 100%;
+				position: relative;
+				top: 450px;
+				background: #99AFEF;
+				height: 2000px;
+			}
+			
+			.wrapper { /*style for wrapper class*/
+				width: 1170px;
+				margin: 0 auto;
+			}
+			
+			.contact-area h5 { /*style for pasteducation-area (content style h5)*/
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				letter-spacing: 4px;
+				padding-top: 30px;
+				font-size: 30px;
+				margin: 0;
+				color: pink;
+				text-align: center;
+			}
+			
+			.contact-info { /*style for contact-info display*/
+				padding: 2% 0px;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				line-height: 30px;
+			}
+			
+			.box { /*style for background contact-info*/
+				background-color: #0F0C08;
+			}
+			
+			.feedback { /*style for background and text in feedback class*/
+				background-color: #532934;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+			
+			.center { /*style to center */
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			input[type=text], select, textarea{ /*style inputs*/
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #CCCCCC;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				resize: vertical;
+				font-family: "Comic Sans MS", cursive, sans-serif;
+			}
+
+			input[type=submit] { /*style for submit button*/
+				background-color: green;
+				color: white;
+				padding: 12px 20px;
+				border: rounded;
+				cursor: pointer;
+			}
+			
+			input[type=reset] { /*style for reset button*/
+				background-color: pink;
+				color: white;
+				padding: 12px 20px;
+				border: rounded;
+				cursor: pointer;
+			}
+			
+			.button-center { /* style to center button */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 200px;
+			}
+			
+			.fa { /* style for social media */
+			  padding: 20px;
+			  font-size: 30px;
+			  width: 70px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			  overflow: hidden;
+			}
+
+			.fa:hover { /* style for when social media account is hovered */
+				opacity: 0.7;
+			}
+
+			.fa-twitter { /* icon style  */
+				background: #55ACEE;
+				color: white;
+			}
+
+			@media only screen and (max-width: 620px){ /*web responsive*/
+			/*for mobile phones*/
+				header, a:hover, nav, nav a, .background-area, .background-area h4, .project-area, .wrapper, .contact-area h5, .contact-info, .box, .feedback, .center, input[type=text], select, textarea,  
+				input[type=submit], .button-center, .fa:hover, .fa-twitter{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<body>
+		<div class="box-area">
+			<header>
+				<div class="wrapper">
+					<nav> <!--navigation-->
+						<a class="active" href="index.html">home</a> 
+						<a class="active" href="about-me.html">about me</a> 
+						<a class="active" href="experiences.html">experiences</a> 
+						<a class="active" href="past-projects.html">past projects</a> 
+						<a class="active" href="contact-me.html">contact me</a>
+					</nav>
+				</div>
+			</header>
+		</div>
+		<div class="background-area">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4>contact <font color="#FFFF31"><i>me</i></font></h4> 
+		</div>
+		<div class="contact-area">
+			<div class="wrapper">
+				<br><br><br><br>
+				<div class="box">
+					<br><br>
+					<h5>contact <font color="blue">information</font></h5> <!--my information-->
+					<br><br><br><br>
+					<img src="trisyia1.png" alt="pic" width="150" height="170" class="center">
+					<br><br><br>
+					<div class="contact-info" align="center">
+						<tr>
+							<td><font color="#99CC99">Name</font></td>
+							<td><font color="white">: </font></td>
+							<td><font color="#9400D3">Dayang Nur Batrisyia Najlaa Binti Abang Nor Zandaria</font></td>
+						</tr>
+						<br><br>
+						<tr>
+							<td><font color="#99CC99">Age</font></td>
+							<td><font color="white">: </font></td>
+							<td><font color="#00FF00">20 years old</font></td>
+						</tr>
+						<br><br>
+						<tr>
+							<td><font color="#99CC99">Address</font></td>
+							<td><font color="white">: </font></td>
+							<td><font color="#FFFF00">No. 351E, Lot 5381, Lorong 6A3, Taman Matang Jaya, 93050, Kuching, Sarawak</font></td>
+						</tr>
+						<br><br>
+						<tr>
+							<td><font color="#99CC99">Phone Number</font></td>
+							<td><font color="white">: </font></td>
+							<td><font color="#00FF00">+601111454132</font></td>
+						</tr>
+						<br><br>
+						<tr>
+							<td><font color="#99CC99">Email</font></td>
+							<td><font color="white">: </font></td>
+							<td><font color="#FF7F00">trisyianajlaa@gmail.com</font></td>
+						</tr>
+						<br><br>
+					</div>
+				</div>
+				<br><br><br><br><br>
+				<div class="feedback">
+					 <form action="mailto:trisyianajlaa@gmail.com" method="post" enctype="multipart/form-data">  <!--submit feedback to email-->
+					<fieldset>
+							<br><br>
+							<h1 align="center"><font color="#F8BA3C">feedbacks</font></h1> <!--textfield to enter input-->
+							<br>
+							<label for="fname"><font color="#C0C0C0">First Name</font></label>
+							<input type="text" id="fname" name="firstname" placeholder="please enter your first name">
+							<label for="lname"><font color="#C0C0C0">Last Name</label>
+							<input type="text" id="lname" name="lastname" placeholder="please enter your last name">
+							<label for="email"><font color="#C0C0C0">Email</label>
+							<input type="text" id="email" name="email" placeholder="please enter your email">
+							<label for="subject"><font color="#C0C0C0">Feedback</label>
+							<textarea id="subject" name="feedback" placeholder="please enter your feedback/enquiry" style="height:170px"></textarea>
+							<div class="button-center">
+								<input type="submit" style="font-family: Comic Sans MS, cursive, sans-serif;" value="Submit To My Email">
+								<input type="reset" style="font-family: Comic Sans MS, cursive, sans-serif; color: #000000;" value="Reset">
+							</div>
+					</fieldset>
+				</div>
+			</div>
+			<br><br><br>
+			<div class="box" align="center">
+				<br><br>
+				<p align="center" style="font-family: Comic Sans MS, cursive, sans-serif; color: pink;"><i>other contacts:</i></p> <!--twitter account-->
+				<br>
+				<a href="https://twitter.com/home" class="fa fa-twitter"></a>
+				<br><br>
+				<div style="background-color: #0A0F18; text-align: center; padding: 40px; margin-top: 40px; color: #C0C0C0; font-family: Comic Sans MS" >  <!--footer-->
+					<p><font size="2">&copy; 2020, Dayang Nur Batrisyia Najlaa Binti Abang Nor Zandaria.</font></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
